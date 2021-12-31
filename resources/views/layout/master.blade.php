@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>HUD | Dashboard</title>
+    <title>Todo App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -13,6 +13,7 @@
 
     <link href="{{asset('assets/plugins/jvectormap-next/jquery-jvectormap.css')}}" rel="stylesheet" />
 
+    <link href="{{asset('assets/plugins/bootstrap-table/dist/bootstrap-table.min.css')}}" rel="stylesheet" />
 </head>
 
 <body>
@@ -170,10 +171,10 @@
     </div>
 
 
-   <script src="{{asset('assets/js/vendor.min.js')}}"></script>
+    <script src="{{asset('assets/js/vendor.min.js')}}"></script>
     <script src="{{asset('assets/js/app.min.js')}}"></script>
 
-
+    <script src="{{asset('assets/plugins/bootstrap-table/dist/bootstrap-table.min.js')}}"></script>
     <script src="{{asset('assets/plugins/jvectormap-next/jquery-jvectormap.min.js')}}"></script>
     <script src="{{asset('assets/plugins/jvectormap-next/jquery-jvectormap-world-mill.js')}}"></script>
     <script src="{{asset('assets/plugins/apexcharts/dist/apexcharts.min.js')}}">

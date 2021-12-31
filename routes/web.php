@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\UserAuth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +19,21 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/','pages.index');
+
+// Register
+Route::get('/signup', [UserAuth::class, 'register'])->name('signup');
+Route::post('/signup_process', [UserAuth::class, 'register_process'])->name('register_process');
+// Login
+Route::get('/login', [UserAuth::class, 'login'])->name('login');
+Route::post('/login_process', [UserAuth::class, 'login_process'])->name('login_process');
+
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+Route::get('/dashboard', [Dashboard::class, 'dashboard'])->name('dashboard');
+
+//Logout
+Route::get('/logout', [UserAuth::class, 'logout'])->name('logout');
+
+});
