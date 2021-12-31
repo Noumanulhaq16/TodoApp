@@ -25,10 +25,9 @@
             <span class="brand-img">
                 <span class="brand-img-text text-theme">H</span>
             </span>
-            <span class="brand-text">ToDo App</span>
+            <span class="brand-text">Todo App</span>
         </a>
     </div>
-
 
     <div class="menu">
 
