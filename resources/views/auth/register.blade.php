@@ -53,7 +53,7 @@
                         <button type="submit" class="btn btn-outline-theme btn-lg d-block w-100">Sign Up</button>
                     </div>
                     <div class="text-white text-opacity-50 text-center">
-                        Already have an ID? <a href="{{route('login')}}">Sign In</a>
+                        Already have an ID? <a href="{{route('/')}}">Sign In</a>
                     </div>
                 </form>
             </div>

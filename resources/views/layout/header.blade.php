@@ -21,10 +21,10 @@
 
 
     <div class="brand">
-        <a href="#" class="brand-logo">
-            <span class="brand-img">
-                <span class="brand-img-text text-theme">H</span>
-            </span>
+        <a href="{{route('dashboard')}}" class="brand-logo">
+            <!-- <span class="brand-img">
+                <span class="brand-img-text text-theme"></span>
+            </span> -->
             <span class="brand-text">Todo App</span>
         </a>
     </div>
@@ -33,11 +33,11 @@
 
         <div class="menu-item dropdown dropdown-mobile-full">
             <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
-                <div class="menu-img online">
+                <!-- <div class="menu-img online">
                     <img src="assets/img/user/profile.jpg" height="60" alt="Profile" />
-                </div>
+                </div> -->
                 <div class="menu-text d-sm-block d-none"><span class="__cf_email__"
-                        data-cfemail="0d787e687f636c60684d6c6e6e62786379236e6260">Love You</span>
+                        data-cfemail="0d787e687f636c60684d6c6e6e62786379236e6260">{{Auth::User()->name}}</span>
                 </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">

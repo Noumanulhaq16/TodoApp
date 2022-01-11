@@ -1,0 +1,10 @@
+{
+    "interests": ["moiz"],
+    "web": {
+      "notification": {
+        "title": "Hi",
+        "body": "Hello, world!",
+        "deep_link": "https://www.pusher.com"
+      }
+    }
+    }
