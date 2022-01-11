@@ -1,5 +1,8 @@
 @extends('layout.master')
 @section('content')
+
+
+
 <table class="table mb-0">
                 @if(Session::has('status'))
                     <div class="alert alert-success alert-block">

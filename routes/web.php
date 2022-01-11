@@ -5,6 +5,7 @@ use App\Http\Controllers\UserAuth;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Notifiable;
+use App\Http\Controllers\FilterController;
 
 use Illuminate\Support\Facades\Route;
 // use App\Events\MyEvent;
@@ -81,4 +82,7 @@ Route::get('/showcategory',[CategoryController::class,'showCategoryPage'])->name
 
 Route::post('/addcategory',[CategoryController::class,'category_process'])->name('addcategory');
 
+Route::get('/showfilterpage',[FilterController::class,'showFilterPage'])->name('showfilterpage');
+
+Route::post('/filter',[FilterController::class,'filter'])->name('filter');
 });
